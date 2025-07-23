@@ -1,4 +1,5 @@
 body{
+    max-width: 100%;
     margin: 0 auto;
 }
 /* font family */
@@ -7,6 +8,12 @@ body{
 }
 .font-inter{
   font-family: "Inter", sans-serif;
+}
+.navicon-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 header{
     max-width: 1300px;
@@ -17,11 +24,11 @@ header{
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .nav-items{
     display: flex;
-    gap: 70px;
+    gap: 50px;
 }
 .nav-items li{
     list-style: none;
@@ -41,31 +48,37 @@ header{
 .shopping-cart{
     color: black;
     font-size: 13px;
+    text-decoration: none;
 }
 /* nav area responsive for phone */
 @media  screen and (max-width: 576px) {
-    .nav-area{
-        justify-content: space-between;
-        align-items: center;
-        margin: 30px 30px;   
+    body{
+        max-width: 100%;
+        margin: 0 auto;
     }
-    .nav-items #home, .shop-aboutus{
-        display: none;
+    header{
+        margin: 0 auto;
+    }
+    .nav-area{
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
     }
     .nav-items{
-        margin-top: 35px;
-        padding-left: 0px;
+        display: none;
     }
     .shopping-cart{
         text-align: center;
-        padding-top: 15px;
-        width: 130px;
+        padding-top: 35px;
         font-size: 15px;
-        margin-right: 15px;
     }   
 }
 /* nav area responsive for tablet */
-@media screen and (min-width: 577px) and (max-width: 992px) {
+/* @media screen and (min-width: 577px) and (max-width: 992px) {
+    header{
+        max-width: 90%;
+        margin: 0 auto;
+    }
     .nav-area{
         margin: 30px 50px;
         justify-items: center ;
@@ -76,9 +89,97 @@ header{
         gap: 35px;
     }
     
-}
+} */
 /* banner section */
 .banner-section{
     max-width: 1300px;
-    margin: 0 auto;  
+    margin: 100px auto; 
+    display: flex; 
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.banner-heading{
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.banner-details{
+    color: rgba(0, 0, 0, 0.5);
+    border-left: 7px solid rgba(233, 90, 8, 1);
+    border-radius: 7px;
+    padding-left: 5px;   
+}
+.banner-image img{
+    max-width: 100%;
+}
+/* responsive banner section for phone */
+@media screen and (max-width: 576px) {
+    .banner-section{
+        flex-direction: column-reverse;
+        margin: 20px 10px 0px 0px;
+        padding-top: 10px;
+    }
+    .banner-tittle h2{
+        font-size: 34px;
+    }
+    .banner-tittle{
+        padding-left: 10px;
+    }
+}
+/* Plants section */
+.plant-section{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.plant-image{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+.plant-cards{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.plant-cards img{
+    max-width: 100%;
+}
+.plant-description{
+    text-align: center;
+}
+.plant-description h3{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.plant-cards h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.plant-cards h5{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.plant-cards button{
+    /* width: 100%; */
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    width: 85%;
+}
+@media screen and (max-width: 576px) {
+    .plant-image{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 35px 12px;
+    }
+    .plant-cards button{
+        width: 100%;
+    }
+    
 }
