@@ -314,6 +314,9 @@ header{
     padding: 12px;
     border: none;
 }
+.tittles input:hover{
+    background-color: lightgray;
+}
 .tittles button{
     padding: 10px;
     border: none;
@@ -322,6 +325,10 @@ header{
     font-weight: 600;
     width: 180px;
     background-color: rgba(233, 90, 8, 1);
+}
+.btn-primary:hover {
+    background-color: rgba(191, 89, 31, 1);
+    cursor: pointer;
 }
 /* responsive subscribe section */
 @media screen and (max-width: 576px) {
@@ -340,5 +347,49 @@ header{
     }
     .tittles button{
         max-width: 100px;
+    }
+}
+/* footer section style */
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+}
+.footer-options li{
+    margin-bottom: 30px;
+    list-style: none;
+}
+.footer-options a{
+    text-decoration: none;
+    color: gray;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+.social-media a{
+    padding: 20px;
+}
+.social-media img{
+    max-width: 36px;
+    height: 36px;
+}
+/* footer section responsive */
+@media screen and (max-width: 576px) {
+    footer{
+        flex-direction: column;       
+    }
+    .footer-logo{
+        padding-left: 15px;
+        padding-right: 10px;
+        padding-top: 40px;
+    }
+    .footer-options{
+        margin-left: -20px;
+        margin-top: 3px;
+    }
+    .social-media{
+        margin-left: -110px;
+        margin-top: -15px;
     }
 }
