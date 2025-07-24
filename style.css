@@ -259,3 +259,86 @@ header{
     }
     
 }
+/* Deal section style */
+.deal-section{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: none;
+}
+.deal-description{
+    text-align: center;
+    margin-top: 150px;
+}
+.deal-description h3{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.deal-description p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+.deal-images{
+    display: flex;
+}
+.row{
+    background-image: url("assets/deal-bloom.png");
+    
+    height: 200px;
+    width: 200px;
+}
+/* Subscribe Section */
+.subscribe-section{
+    margin-top: 120px;
+    margin-bottom: 50px;
+    height: 530px;
+    width: 100%;
+    background-image: url("assets/news-letter-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tittles{
+    text-align: center;
+}
+.tittles h3{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.tittles input{
+    width: 600px;
+    padding: 12px;
+    border: none;
+}
+.tittles button{
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 180px;
+    background-color: rgba(233, 90, 8, 1);
+}
+/* responsive subscribe section */
+@media screen and (max-width: 576px) {
+    .subscribe-section{
+        max-width: 100%;
+        background-size: cover;
+        height: 276px;
+        margin-top: 30px;
+        margin-bottom: 0;   
+    }
+    .tittles h3{
+        font-size: 20px;
+    }
+    .tittles input{
+        max-width: 215px;
+    }
+    .tittles button{
+        max-width: 100px;
+    }
+}
