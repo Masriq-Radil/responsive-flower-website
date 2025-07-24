@@ -116,14 +116,15 @@ header{
 @media screen and (max-width: 576px) {
     .banner-section{
         flex-direction: column-reverse;
-        margin: 20px 10px 0px 0px;
+        margin: 20px 0px 0px 0px;
         padding-top: 10px;
     }
     .banner-tittle h2{
         font-size: 34px;
     }
     .banner-tittle{
-        padding-left: 10px;
+        padding-left: 12px;
+        padding-right: 10px;
     }
 }
 /* Plants section */
@@ -140,6 +141,10 @@ header{
 .plant-cards{
     text-align: center;
     margin-bottom: 20px;
+}
+.plant-cards:hover{
+    transform: scaleX(1.25);
+    transition: 2s;
 }
 .plant-cards img{
     max-width: 100%;
@@ -180,6 +185,77 @@ header{
     }
     .plant-cards button{
         width: 100%;
+    }
+    .plant-description{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .plant-description h3{
+        font-size: 28px;
+        margin-bottom: 8px; 
+    }
+    .plant-cards:hover{
+        transform: scale(1.1);
+        transition: 1.5s;
+    }
+    
+}
+.flower-lover-section{
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+#badge{
+    height: 280px;
+    width: 280px;
+    margin-left: 400px;
+    margin-top: 0px;   
+}
+@keyframes spin {
+    from {transform: rotateX(0deg);}
+    to {transform: rotateY(360deg);}
+}
+#badge {
+    animation: spin 5s linear infinite;
+}
+.lover-div{
+    display: flex;
+    gap: 50px; 
+    margin-top: 180px;
+}
+.lover-image img{
+    max-width: 100%;
+}
+.badge-div{
+    margin-top: -720px;
+}
+.lover-description h4{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.lover-description li{
+    margin-top: 18px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 576px) {
+    .badge-div{
+        display: none;
+    }
+    .lover-div{
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 20px;
+        gap: 15px;
+    }
+    .lover-description h4{
+        font-size: 25px;
+        padding-left: 5px;
+    }
+    .lover-description li{
+        font-size: 14px;
     }
     
 }
